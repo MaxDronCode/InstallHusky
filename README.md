@@ -1,8 +1,8 @@
 # HOW TO CONFIGURE HUKSY
 
-# Config de Husky y Conventional commits
+# Config de Husky i Conventional commits
 
-1. Instalar husky
+1. Instal·lar husky
 ```
 yarn add -D husky
 ```
