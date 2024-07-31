@@ -1,4 +1,4 @@
-# DockerDeployGHPages
+# HOW TO CONFIGURE HUKSY
 
 # Config de Husky y Conventional commits
 
@@ -64,53 +64,3 @@ Per a fer un commit ara farem `ctrl + shift + P`
 ![alt text](.images/image-10.png)
 ![alt text](.images/image-11.png)
 ![alt text](.images/image-12.png)
-
-# CREATE A WORKFLOW TO DEPLOY GH PAGES
-
-1. Your package.json file should consist a field `homepage`: 
-
-
-Afegim la direcció on estarà la nostra GH page
-
-```javascript
-  "homepage": "https://<github-username>.github.io/<project-repo>"
-```
-
-2.1. Install `gh-pages` via npm:
-
-```javascript
-  npm i --save-dev gh-pages
-```
-
-2.2. Or yarn:
-
-Afegim gh-actions com a dev dependency
-
-```javascript
-  yarn add --dev gh-pages
-```
-
-3.1. Add new `script` to `package.json` via `yarn`:
-
-```javascript
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
-```
-
-![alt text](.images/image(14).png)
-
-3.2. Or `npm`:
-
-```javascript
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-```
-
-
-# Code Coverage:
-
-`yarn add -D nyc`
-
-`"coverage": "nyc yarn test"`
-
-![alt text](.images/image.png)
