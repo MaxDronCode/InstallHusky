@@ -10,13 +10,13 @@ yarn add -D husky
 #yarn add-script postinstall "husky install"
 yarn dlx husky-init --yarn2 && yarn
 ```
+Mirar al `package.json` obligatori el postinstall 
+![alt text](.images/image.png)
+
 2. Afegir el conventional commit
 ```
 yarn add -D @commitlint/cli @commitlint/config-conventional
 ```
-
-Mirar al `package.json` obligatori el postinstall 
-![alt text](.images/image.png)
 
 Crear el fitxer `commitlint.config.js` a el nostre directori `root`
 
